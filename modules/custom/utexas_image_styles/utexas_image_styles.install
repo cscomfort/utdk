@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for the UTexas Image Styles module.
+ */
+
+/**
+ * Issue #986: Add new image style for consistent square aspect ratio - width and height both 500px.
+ */
+function utexas_image_styles_update_8101() {
+  \Drupal::service('features.manager')->import([
+    'utexas_image_styles',
+  ], TRUE);
+}
+
+/**
+ * Issue #1199: Add new image style for 280x152 size.
+ */
+function utexas_image_styles_update_8102() {
+  \Drupal::service('features.manager')->import([
+    'utexas_image_styles',
+  ], TRUE);
+}

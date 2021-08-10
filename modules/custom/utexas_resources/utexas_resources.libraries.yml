@@ -1,0 +1,10 @@
+resources-formatter:
+  version: 1.x
+  css:
+    theme:
+      css/resources-formatter.css: {}
+resources-widget:
+  version: 1.x
+  css:
+    theme:
+      css/resources-widget.css: {}

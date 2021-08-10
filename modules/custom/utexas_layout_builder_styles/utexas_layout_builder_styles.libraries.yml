@@ -1,0 +1,11 @@
+border-styles:
+  version: 1.0
+  css:
+    theme:
+      css/centered-headline.css: {}
+      css/border-with-background.css: {}
+readable:
+  version: 1.0
+  css:
+    theme:
+      css/readable.css: {}

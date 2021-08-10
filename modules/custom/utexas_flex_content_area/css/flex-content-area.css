@@ -1,0 +1,31 @@
+/* Items Per Row Styles */
+.ut-flex-content-area-wrapper {
+  --ipr-grid-gap: 2vw;
+  --ipr-grid-min-min-size: 200px;
+  --ipr-grid-min-max-size: 200px;
+
+  display: grid;
+  grid-gap: var(--ipr-grid-gap);
+  grid-template-columns: repeat(auto-fit, minmax(max(var(--ipr-grid-min-min-size), var(--ipr-grid-min-max-size)), 1fr));
+}
+
+.utexas-onecol .ut-flex-content-area-wrapper {
+  --ipr-grid-min-max-size: 100%;
+}
+.utexas-twocol .ut-flex-content-area-wrapper {
+  --ipr-grid-min-max-size: calc(50% - var(--ipr-grid-gap));
+}
+.utexas-threecol .ut-flex-content-area-wrapper {
+  --ipr-grid-min-max-size: calc(33.333% - (2 * var(--ipr-grid-gap)));
+}
+.utexas-fourcol .ut-flex-content-area-wrapper {
+  --ipr-grid-min-max-size: calc(25% - (3 * var(--ipr-grid-gap)));
+}
+/* ****************************** */
+
+.ut-flex-content-area {
+  min-width: var(--ipr-grid-min-min-size);
+}
+.ut-flex-content-area .image-wrapper .ut-img--fluid {
+  width: 100%;
+}

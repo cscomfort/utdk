@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for the UTexas Call To Action module.
+ */
+
+/**
+ * Change CTA widget and formatter to use utexas_link.
+ */
+function utexas_call_to_action_update_8101() {
+  \Drupal::service('features.manager')->import([
+    'utexas_call_to_action',
+  ], TRUE);
+}

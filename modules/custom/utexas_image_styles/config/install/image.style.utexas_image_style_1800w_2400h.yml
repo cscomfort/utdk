@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+name: utexas_image_style_1800w_2400h
+label: '1800w x 2400h'
+effects: {  }

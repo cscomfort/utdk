@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: utexas_fourcol
+label: 'Limit to 4 items per row (if no limit is set, items will adjust to fit the available space)'
+classes: utexas-fourcol
+type: component
+weight: 103
+block_restrictions:
+  - 'inline_block:social_links'
+  - 'inline_block:utexas_flex_content_area'
+  - 'inline_block:utexas_promo_unit'
+  - 'inline_block:utexas_quick_links'
+  - 'inline_block:utexas_resources'

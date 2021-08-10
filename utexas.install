@@ -352,12 +352,12 @@ function utexas_update_8118() {
   }
 }
 
-///**
-// * Enable Paragraphs on existing sites.
-// */
-//function utexas_update_8119() {
-//  $module = 'paragraphs';
-//  if (\Drupal::moduleHandler()->moduleExists($module) === FALSE) {
-//    \Drupal::service('module_installer')->install([$module]);
-//  }
-//}
+/**
+ * Enable Paragraphs on existing sites.
+ */
+function utexas_update_8119() {
+  $module = 'paragraphs';
+  if (\Drupal::moduleHandler()->moduleExists($module) === FALSE) {
+    \Drupal::service('module_installer')->install([$module]);
+  }
+}

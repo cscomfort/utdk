@@ -1,6 +1,6 @@
 {
   "name": "utexas/utdk_profile",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "type": "drupal-custom-profile",
   "description": "Drupal 9 installation profile for the UT Drupal Kit",
   "keywords": [

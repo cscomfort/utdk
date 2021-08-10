@@ -361,3 +361,13 @@ function utexas_update_8119() {
     \Drupal::service('module_installer')->install([$module]);
   }
 }
+
+/**
+ * Enable Paragraphs on existing sites.
+ */
+function utexas_update_8120() {
+    $module = 'config_split';
+    if (\Drupal::moduleHandler()->moduleExists($module) === FALSE) {
+        \Drupal::service('module_installer')->install([$module]);
+    }
+}
